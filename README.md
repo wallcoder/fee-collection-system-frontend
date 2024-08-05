@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # frontend
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -27,3 +28,6 @@ npm run dev
 ```sh
 npm run build
 ```
+=======
+Backend for fee collection system
+>>>>>>> 088acd9179f84ecd6a734bb7eca5c237b448a518

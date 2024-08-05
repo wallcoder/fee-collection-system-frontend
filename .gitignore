@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -28,3 +29,6 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+=======
+.env
+>>>>>>> 088acd9179f84ecd6a734bb7eca5c237b448a518
