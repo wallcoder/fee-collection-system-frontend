@@ -1,8 +1,10 @@
 import db from "../config/database.js";
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
-import { SECRET_KEY } from '../index.js';
+import dotenv from 'dotenv';
+dotenv.config();
 
+const SECRET_KEY = process.env.SECRET_KEY;
 export const adminLogin = (data, result)=>{
     console.log(data);
     db.query("SELECT * FROM admin WHERE email = ? LIMIT 1", [data.email], async (err, results)=>{

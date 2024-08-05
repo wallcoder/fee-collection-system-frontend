@@ -1,7 +1,10 @@
 import { adminLogin, searchStudentById } from "../models/AuthModel.js";
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
-import { SECRET_KEY } from '../index.js';
+import dotenv from 'dotenv';
+dotenv.config();
+
+const SECRET_KEY = process.env.SECRET_KEY;
 
 export const adminLoginAuth = (req, res) => {
     const data = req.body;

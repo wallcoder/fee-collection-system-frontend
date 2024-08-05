@@ -8,15 +8,21 @@ import fs from 'fs';
 import session from 'express-session';
 
 import dotenv from 'dotenv';
+import { Console } from 'console';
 dotenv.config();
 
 
+
+const SECRET_KEY = process.env.SECRET_KEY;
 
 
 const PORT = 3000;
 const app = express();
 
-export const SECRET_KEY = process.env.SECRET_KEY;
+ 
+
+export const SERVER_PORT = process.env.SERVER_PORT;
+
 
 
 
@@ -47,10 +53,10 @@ app.use(logger);
 
 app.listen(PORT, () => console.log(`Server is now listening on port ${PORT}`));
 
-// Use the institution routes
+
 app.use('/api', institutionRoutes);
 
-// Create the uploads directory if it doesn't exist
+
 const uploadsDir = 'uploads';
 if (!fs.existsSync(uploadsDir)){
     fs.mkdirSync(uploadsDir);
