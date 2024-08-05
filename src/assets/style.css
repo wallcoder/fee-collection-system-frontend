@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  /* background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(../images/background.jpg); */
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  /* color: rgb(202, 202, 202); */
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: white;
+
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgb(170, 170, 170);
+  border-radius: 5px;
+  color: #fff3f9;
+
+}
+
+.modal-enter-active,
+.modal-leave-active {
+  transition: all 0.25s ease;
+}
+
+.modal-enter-from,
+.modal-leave-to {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+/* custom-toast-styles.css */
+.Toastify__toast {
+  font-family: 'Arial', sans-serif;
+  /* Change font */
+  background-color: #333;
+  /* Change background color */
+  color: #fff;
+  /* Change text color */
+  border-radius: 8px;
+  /* Change border radius */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* Add box shadow */
+}
+
+.Toastify__toast--success {
+  background-color: #4caf50;
+  /* Change success background color */
+}
+
+.Toastify__toast--error {
+  background-color: #f44336;
+  /* Change error background color */
+}
+
+.Toastify__toast--info {
+  background-color: #2196f3;
+  /* Change info background color */
+}
+
+.Toastify__toast--warning {
+  background-color: #ff9800;
+  /* Change warning background color */
+}
+
+.Toastify__close-button {
+  color: #fff;
+  /* Change close button color */
+}
