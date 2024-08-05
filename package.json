@@ -12,6 +12,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@vueuse/core": "^10.11.0",
     "@vueuse/motion": "^2.2.3",
+    "axios": "^1.7.3",
     "chart.js": "^4.4.3",
     "chartjs-plugin-datalabels": "^2.2.0",
     "html2canvas": "^1.4.1",
